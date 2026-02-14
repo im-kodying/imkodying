@@ -60,12 +60,13 @@ The orchestrator tallies scores and recommendations from all four reviewers. Ele
 
 | What | Path |
 |------|------|
-| Plugin root | `/Users/kody/imkodying/` |
-| Core documents (you are here) | `/Users/kody/imkodying/core/` |
-| Library index | `/Users/kody/imkodying/library/INDEX.md` |
-| Library documents | `/Users/kody/imkodying/library/` |
-| Agent definitions | `/Users/kody/imkodying/agents/` |
-| Skill definition | `/Users/kody/imkodying/skills/orchestrate/SKILL.md` |
+| Plugin root (installed) | `~/.claude/plugins/cache/imkodying-imkodying/` |
+| Plugin root (dev) | `~/imkodying/` (with `--plugin-dir`) |
+| Core documents (you are here) | `[plugin-root]/core/` |
+| Library index | `[plugin-root]/library/INDEX.md` |
+| Library documents | `[plugin-root]/library/` |
+| Agent definitions | `[plugin-root]/agents/` |
+| Skill definition | `[plugin-root]/skills/orchestrate/SKILL.md` |
 | Per-run workspace | `./.imkodying/` (in the current project) |
 
 ---

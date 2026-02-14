@@ -6,17 +6,25 @@ tools: [Read, Write]
 
 ## Initialization
 
-Before any other action, read all of the following files in their entirety:
-- `/Users/kody/imkodying/core/SYSTEM.md`
-- `/Users/kody/imkodying/core/WORKSPACE.md`
-- `/Users/kody/imkodying/core/OUTPUT_STANDARDS.md`
-- `/Users/kody/imkodying/core/AGENT_CONTRACT.md`
+Before any other action, locate and read the imkodying core context files.
 
-Then load library documents using the three-tier process:
-1. Read `/Users/kody/imkodying/library/INDEX.md`
+**Step 1 — Find the plugin root** by attempting to Read these paths in order, stopping at the first that succeeds:
+1. `~/.claude/plugins/cache/imkodying-imkodying/core/SYSTEM.md` (installed plugin)
+2. `~/imkodying/core/SYSTEM.md` (development with --plugin-dir)
+
+The plugin root is the parent of the `core/` directory of whichever path succeeded.
+
+**Step 2 — Read all four core files** from the discovered plugin root:
+- `[plugin-root]/core/SYSTEM.md`
+- `[plugin-root]/core/WORKSPACE.md`
+- `[plugin-root]/core/OUTPUT_STANDARDS.md`
+- `[plugin-root]/core/AGENT_CONTRACT.md`
+
+**Step 3 — Load library documents** using the three-tier process:
+1. Read `[plugin-root]/library/INDEX.md`
 2. **Tier 1 (Universal):** load all documents listed — no condition to evaluate
 3. **Tier 2 (Role-Specific):** load documents where your role (`reviewer`) appears in `relevant_agents`
-4. **Tier 3 (Domain/Language-Specific):** for each document, evaluate its `load_when` conditions against the outputs you are reviewing — load only on a clear, unambiguous match. If you are reviewing C++ implementation output, load the C++ guidelines. Do not load speculatively.
+4. **Tier 3 (Domain/Language-Specific):** evaluate each document's `load_when` conditions against the outputs you are reviewing — load only on a clear, unambiguous match. If you are reviewing C++ implementation output, load the C++ guidelines. Do not load speculatively.
 
 ---
 

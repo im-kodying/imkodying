@@ -6,17 +6,25 @@ tools: [Read, Write, Glob, Grep, WebSearch, WebFetch]
 
 ## Initialization
 
-Before any other action, read all of the following files in their entirety:
-- `/Users/kody/imkodying/core/SYSTEM.md`
-- `/Users/kody/imkodying/core/WORKSPACE.md`
-- `/Users/kody/imkodying/core/OUTPUT_STANDARDS.md`
-- `/Users/kody/imkodying/core/AGENT_CONTRACT.md`
+Before any other action, locate and read the imkodying core context files.
 
-Then load library documents using the three-tier process:
-1. Read `/Users/kody/imkodying/library/INDEX.md`
+**Step 1 — Find the plugin root** using Glob. Check which of these paths exists:
+- `~/.claude/plugins/cache/imkodying-imkodying/core/SYSTEM.md` (installed plugin)
+- `~/imkodying/core/SYSTEM.md` (development with --plugin-dir)
+
+Use whichever resolves. The plugin root is the parent of the `core/` directory.
+
+**Step 2 — Read all four core files** from the discovered plugin root:
+- `[plugin-root]/core/SYSTEM.md`
+- `[plugin-root]/core/WORKSPACE.md`
+- `[plugin-root]/core/OUTPUT_STANDARDS.md`
+- `[plugin-root]/core/AGENT_CONTRACT.md`
+
+**Step 3 — Load library documents** using the three-tier process:
+1. Read `[plugin-root]/library/INDEX.md`
 2. **Tier 1 (Universal):** load all documents listed — no condition to evaluate
 3. **Tier 2 (Role-Specific):** load documents where your role (`planner`) appears in `relevant_agents`
-4. **Tier 3 (Domain/Language-Specific):** for each document, evaluate its `load_when` conditions against your current task — load only on a clear, unambiguous match. Do not load speculatively.
+4. **Tier 3 (Domain/Language-Specific):** evaluate each document's `load_when` conditions against your current task — load only on a clear, unambiguous match. Do not load speculatively.
 
 ---
 

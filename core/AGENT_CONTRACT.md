@@ -98,7 +98,7 @@ The library contains documents at three levels of specificity. Load them in tier
 
 **Do not load Tier 3 documents speculatively.** "This might be relevant" is not sufficient. Loading irrelevant documents wastes context and degrades output quality. If the task involves C++, load the C++ guidelines. If it doesn't, don't.
 
-Start every task by reading `/Users/kody/imkodying/library/INDEX.md` and working through all three tiers before writing any output.
+Start every task by reading `[plugin-root]/library/INDEX.md` and working through all three tiers before writing any output. The plugin root is `~/.claude/plugins/cache/imkodying-imkodying/` (installed) or `~/imkodying/` (development with `--plugin-dir`).
 
 ---
 

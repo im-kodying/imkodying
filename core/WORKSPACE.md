@@ -87,11 +87,13 @@ These files are part of the plugin and are never modified during a run:
 
 | Path | Purpose |
 |------|---------|
-| `/Users/kody/imkodying/core/SYSTEM.md` | System overview |
-| `/Users/kody/imkodying/core/WORKSPACE.md` | This file |
-| `/Users/kody/imkodying/core/OUTPUT_STANDARDS.md` | Quality standards |
-| `/Users/kody/imkodying/core/AGENT_CONTRACT.md` | Agent rules |
-| `/Users/kody/imkodying/library/INDEX.md` | Library catalog |
-| `/Users/kody/imkodying/library/*.md` | Reference documents |
+| `[plugin-root]/core/SYSTEM.md` | System overview |
+| `[plugin-root]/core/WORKSPACE.md` | This file |
+| `[plugin-root]/core/OUTPUT_STANDARDS.md` | Quality standards |
+| `[plugin-root]/core/AGENT_CONTRACT.md` | Agent rules |
+| `[plugin-root]/library/INDEX.md` | Library catalog |
+| `[plugin-root]/library/*.md` | Reference documents |
 
-Do not write to any file under `/Users/kody/imkodying/`. Plugin files are read-only reference material.
+Where `[plugin-root]` is `~/.claude/plugins/cache/imkodying-imkodying/` (installed) or `~/imkodying/` (development with `--plugin-dir`).
+
+Do not write to any file under the plugin root. Plugin files are read-only reference material.

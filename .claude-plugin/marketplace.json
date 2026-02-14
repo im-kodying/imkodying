@@ -9,7 +9,10 @@
   "plugins": [
     {
       "name": "imkodying",
-      "source": "..",
+      "source": {
+        "source": "github",
+        "repo": "im-kodying/imkodying"
+      },
       "description": "Spawn parallel specialist agents (planner, researcher, implementer, tester) that each tackle a task independently, then anonymously peer-review and vote on each other's outputs. The orchestrator synthesizes a final amalgamated response.",
       "version": "1.0.0",
       "author": {

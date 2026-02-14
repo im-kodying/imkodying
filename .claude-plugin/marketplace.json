@@ -1,0 +1,22 @@
+{
+  "name": "imkodying",
+  "owner": {
+    "name": "kody"
+  },
+  "metadata": {
+    "description": "Multi-perspective agent orchestration with anonymous peer review and democratic synthesis."
+  },
+  "plugins": [
+    {
+      "name": "imkodying",
+      "source": "..",
+      "description": "Spawn parallel specialist agents (planner, researcher, implementer, tester) that each tackle a task independently, then anonymously peer-review and vote on each other's outputs. The orchestrator synthesizes a final amalgamated response.",
+      "version": "1.0.0",
+      "author": {
+        "name": "kody"
+      },
+      "keywords": ["orchestration", "multi-agent", "peer-review", "synthesis"],
+      "category": "development-workflows"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 ---
-name: orchestrate
+name: imkodying
 description: Multi-perspective problem solving. Creates a team of four specialist agents (planner, researcher, implementer, tester) who each tackle the task independently from their own lens, then anonymously peer-review and vote on each other's outputs. The orchestrator synthesizes a final amalgamated response weighted by votes. Use this as the default approach for any non-trivial task where multiple perspectives add value.
 ---
 

@@ -1,6 +1,8 @@
 ---
 name: reviewer
 description: Anonymous peer review agent for the imkodying orchestration system. Reads anonymized specialist outputs, scores each across five dimensions, and provides structured critique and recommendations. Used exclusively in Phase 2 of the orchestration workflow.
+model: inherit
+color: magenta
 tools: [Read, Write]
 ---
 
@@ -9,7 +11,7 @@ tools: [Read, Write]
 Before any other action, locate and read the imkodying core context files.
 
 **Step 1 — Find the plugin root** by attempting to Read these paths in order, stopping at the first that succeeds:
-1. `~/.claude/plugins/cache/imkodying-imkodying/core/SYSTEM.md` (installed plugin)
+1. `~/.claude/plugins/cache/*/imkodying/*/core/SYSTEM.md` (installed plugin — matches any owner/version)
 2. `~/imkodying/core/SYSTEM.md` (development with --plugin-dir)
 
 The plugin root is the parent of the `core/` directory of whichever path succeeded.

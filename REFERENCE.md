@@ -25,7 +25,7 @@ Every task runs through three phases:
 
 ### Orchestrator
 
-**Invoked via:** `/imkodying:orchestrate [task]`
+**Invoked via:** `/imkodying [task]`
 **Role:** Team lead and synthesizer
 
 The Orchestrator does not do specialist work. It creates the agent team, assigns tasks, waits for phases to complete, manages the anonymization and review process, tallies votes, and synthesizes the final response. It is the only agent that sees all outputs and all reviews.
@@ -149,7 +149,7 @@ The Reviewer is used exclusively in Phase 2. It receives an anonymized review pa
 ## Workflow Diagram
 
 ```
-User: /imkodying:orchestrate [task]
+User: /imkodying [task]
               │
               ▼
       ┌───────────────┐

@@ -1,7 +1,7 @@
 {
   "name": "imkodying",
   "description": "Multi-perspective agent orchestration with anonymous peer review and democratic synthesis. Spawns parallel specialist agents (planner, researcher, implementer, tester), collects their outputs, runs a blind peer review round, and synthesizes a final amalgamated response.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": {
     "name": "kody"
   }

@@ -94,6 +94,6 @@ These files are part of the plugin and are never modified during a run:
 | `[plugin-root]/library/INDEX.md` | Library catalog |
 | `[plugin-root]/library/*.md` | Reference documents |
 
-Where `[plugin-root]` is `~/.claude/plugins/cache/imkodying-imkodying/` (installed) or `~/imkodying/` (development with `--plugin-dir`).
+Where `[plugin-root]` is `~/.claude/plugins/cache/*/imkodying/*/` (installed — owner and version vary) or `~/imkodying/` (development with `--plugin-dir`). Use Glob to discover the exact path at runtime.
 
 Do not write to any file under the plugin root. Plugin files are read-only reference material.

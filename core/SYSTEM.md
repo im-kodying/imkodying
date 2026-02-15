@@ -60,13 +60,13 @@ The orchestrator tallies scores and recommendations from all four reviewers. Ele
 
 | What | Path |
 |------|------|
-| Plugin root (installed) | `~/.claude/plugins/cache/imkodying-imkodying/` |
+| Plugin root (installed) | `~/.claude/plugins/cache/*/imkodying/*/` (owner and version vary) |
 | Plugin root (dev) | `~/imkodying/` (with `--plugin-dir`) |
 | Core documents (you are here) | `[plugin-root]/core/` |
 | Library index | `[plugin-root]/library/INDEX.md` |
 | Library documents | `[plugin-root]/library/` |
 | Agent definitions | `[plugin-root]/agents/` |
-| Skill definition | `[plugin-root]/skills/orchestrate/SKILL.md` |
+| Skill definition | `[plugin-root]/skills/imkodying/SKILL.md` |
 | Per-run workspace | `./.imkodying/` (in the current project) |
 
 ---
